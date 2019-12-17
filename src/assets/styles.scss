@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar {
+    width: 100%;
+    border-top: 3px solid #1c5769;
+    .content {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 5%;
+        height: 100%;
+
+        .logo {
+            height: 40px;
+            img {
+                height: 100%;
+            }
+        }
+
+        .searchBar {
+            height: 40px;
+            button {
+                height: 100%;
+                padding: 0 20px;
+                font-size: 1em;
+                background: #1e7a96;
+                color: #FFF;
+                border: 0;
+            }
+            input {
+                font-size: 1em;
+                height: 100%;
+                padding: 0 10px;
+                width: 400px;
+            }
+        }
+    }
+
+    @media(max-width: 868px) {
+        height: auto;
+        .content {
+
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            & > * {
+                margin: 20px auto 7px auto;
+            }
+        }
+    }
+    @media(min-width: 868px) {
+        height: 70px;
+        .content {
+
+            & > * {
+                margin: auto 0;
+            }
+        }
+    }
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    font-size: 1.16em;
+    .links {
+        &>*{
+            margin: 0 10px;
+        }
+    }    
+}
+
+// =============Parallax Star background in CSS
+// =============Source:https://codepen.io/saransh/pen/BKJun
+
+@import "compass-mixins";
+
+// n is number of stars required
+@function multiple-box-shadow($n) {
+    $value: "#{random(2000)}px #{random(2000)}px #FFF";
+
+    @for $i from 2 through $n {
+        $value: "#{$value} , #{random(2000)}px #{random(2000)}px #FFF";
+    }
+
+    @return unquote($value);
+}
+
+$shadows-small: multiple-box-shadow(700);
+$shadows-medium: multiple-box-shadow(200);
+$shadows-big: multiple-box-shadow(100);
+
+html {
+    height: 100%;
+    background: radial-gradient(ellipse at bottom, #080f17 0%, #212f73 100%);
+    overflow: hidden;
+    color: #FFF;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    color: #95bee4;
+    text-decoration: none;
+    &:hover, &:active, &:focus {
+        color: #577088;
+    }
+}
+
+#stars {
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: $shadows-small;
+    animation: animStar 50s linear infinite;
+
+    &:after {
+        content: " ";
+        position: absolute;
+        top: 2000px;
+        width: 1px;
+        height: 1px;
+        background: transparent;
+        box-shadow: $shadows-small;
+    }
+}
+
+#stars2 {
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: $shadows-medium;
+    animation: animStar 100s linear infinite;
+
+    &:after {
+        content: " ";
+        position: absolute;
+        top: 2000px;
+        width: 2px;
+        height: 2px;
+        background: transparent;
+        box-shadow: $shadows-medium;
+    }
+}
+
+#stars3 {
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    box-shadow: $shadows-big;
+    animation: animStar 150s linear infinite;
+
+    &:after {
+        content: " ";
+        position: absolute;
+        top: 2000px;
+        width: 3px;
+        height: 3px;
+        background: transparent;
+        box-shadow: $shadows-big;
+    }
+}
+
+#title {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    color: #FFF;
+    text-align: center;
+    font-weight: 300;
+    font-size: 50px;
+    letter-spacing: 10px;
+    margin-top: -60px;
+    padding-left: 10px;
+    font-weight: 700;
+
+    span {
+        color: #FFF;
+    }
+}
+
+@keyframes animStar {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-2000px);
+    }
+}
