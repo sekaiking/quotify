@@ -8,10 +8,10 @@ export default function Footer() {
                 <Link to="/">Home</Link>
                 <Link to="/about">About</Link>
                 <Link to="/404">404</Link>
-                <a href="https://github.com/afaithraf/Quotify">Github</a>
+                <a target="_blank" href="https://github.com/afaithraf/Quotify">Github</a>
             </nav>
             <div className="info">
-                made by <a href="https://github.com/afaithraf">Ashraf</a> | Quotify 2020
+                made by <a target="_blank" href="https://github.com/afaithraf">Ashraf</a> | Quotify 2020
             </div>
         </footer>
     )
