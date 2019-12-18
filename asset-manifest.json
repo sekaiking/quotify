@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/quotify/static/css/main.58dd5848.chunk.css",
+    "main.css": "/quotify/static/css/main.5f0655a3.chunk.css",
     "main.js": "/quotify/static/js/main.046a3973.chunk.js",
     "main.js.map": "/quotify/static/js/main.046a3973.chunk.js.map",
     "runtime-main.js": "/quotify/static/js/runtime-main.e3f3128a.js",
@@ -8,9 +8,9 @@
     "static/js/2.620ef267.chunk.js": "/quotify/static/js/2.620ef267.chunk.js",
     "static/js/2.620ef267.chunk.js.map": "/quotify/static/js/2.620ef267.chunk.js.map",
     "index.html": "/quotify/index.html",
-    "precache-manifest.4580bb2741c68af49229a578cbcadc93.js": "/quotify/precache-manifest.4580bb2741c68af49229a578cbcadc93.js",
+    "precache-manifest.e84539ae245a5cdd7f1cf1bcbc21a5ca.js": "/quotify/precache-manifest.e84539ae245a5cdd7f1cf1bcbc21a5ca.js",
     "service-worker.js": "/quotify/service-worker.js",
-    "static/css/main.58dd5848.chunk.css.map": "/quotify/static/css/main.58dd5848.chunk.css.map",
+    "static/css/main.5f0655a3.chunk.css.map": "/quotify/static/css/main.5f0655a3.chunk.css.map",
     "static/js/2.620ef267.chunk.js.LICENSE": "/quotify/static/js/2.620ef267.chunk.js.LICENSE",
     "static/media/loading.svg": "/quotify/static/media/loading.27e2ef14.svg",
     "static/media/logo.png": "/quotify/static/media/logo.f3c971f0.png"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.e3f3128a.js",
     "static/js/2.620ef267.chunk.js",
-    "static/css/main.58dd5848.chunk.css",
+    "static/css/main.5f0655a3.chunk.css",
     "static/js/main.046a3973.chunk.js"
   ]
 }
