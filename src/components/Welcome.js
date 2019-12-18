@@ -1,11 +1,10 @@
 import React from 'react'
 
-export default function index() {
+export default function Welcome() {
     return (
-        <React.Fragment>
-            <span>
+            <span className="center">
                 Welcome!
             </span>
-        </React.Fragment>
     )
 }
+
