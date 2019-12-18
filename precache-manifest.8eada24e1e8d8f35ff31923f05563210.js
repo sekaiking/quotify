@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "91485420bfff34ca7d9f3364ac71f2ed",
+    "revision": "4c72e355963a8c09898c120cd5ae7ca6",
     "url": "/quotify/index.html"
   },
   {
-    "revision": "430f1ed741b55cec9a37",
-    "url": "/quotify/static/css/main.f616c998.chunk.css"
+    "revision": "a5021234bdf39a49ceb7",
+    "url": "/quotify/static/css/main.371fb3b5.chunk.css"
   },
   {
     "revision": "b73d5c4b0fc590c37197",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/quotify/static/js/2.620ef267.chunk.js.LICENSE"
   },
   {
-    "revision": "430f1ed741b55cec9a37",
-    "url": "/quotify/static/js/main.05684a12.chunk.js"
+    "revision": "a5021234bdf39a49ceb7",
+    "url": "/quotify/static/js/main.0fc1ca55.chunk.js"
   },
   {
     "revision": "6d53c75b107f0a27a94d",
