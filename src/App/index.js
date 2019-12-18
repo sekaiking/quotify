@@ -34,7 +34,7 @@ export default class app extends Component {
     }
     render() {
         return (
-             <Router basename={'/quotify'}>{/*change basename to match subdirectory or remove*/}
+             <Router basename={'quotify'}>{/*change basename to match subdirectory or remove*/}
                 <Navbar onGenerate={this.getQuote.bind(this)} />
                 <div id='stars'></div>
                 <div id='stars2'></div>
