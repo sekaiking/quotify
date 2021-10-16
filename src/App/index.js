@@ -59,7 +59,7 @@ export default class app extends Component {
     getQuote() {
         this.setState({ quote: null, loading: true })
 
-        let endpoint = 'https://cors-anywhere.herokuapp.com/http://quotes.stormconsultancy.co.uk/random.json'; //to prevent CORS problems
+        let endpoint = 'http://quotes.stormconsultancy.co.uk/random.json';
         let apiKey = '9a916a23d7dceb5c5019cb24cc324551b483fc78';
         let reqPar = {
             header: {
